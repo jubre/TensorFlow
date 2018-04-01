@@ -26,6 +26,14 @@ print(tp)
 # Read an specific column
 print(tp.pop('Post-Test Score'))
 
-# Read Keys = Headers
+# Read nombre of Keys = Headers
 for key in tp.keys():
     print(key)
+
+# Read first 3 rows
+print (df.head(3))
+
+
+# Read the first name column
+print(df.first_name)
+print(df['first_name'])
