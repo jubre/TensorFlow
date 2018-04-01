@@ -14,3 +14,7 @@ print(df)
 
 # Save in csv
 df.to_csv('test-pandas.csv')
+
+# Read from csv
+tp = pd.read_csv('test-pandas.csv')
+print(tp)
