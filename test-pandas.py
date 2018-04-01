@@ -18,3 +18,7 @@ df.to_csv('test-pandas.csv')
 # Read from csv
 tp = pd.read_csv('test-pandas.csv')
 print(tp)
+
+# Read csv specifying column names, and first row is header
+tp = pd.read_csv('test-pandas.csv', names=['UID', 'First Name', 'Last Name', 'Age', 'Pre-Test Score', 'Post-Test Score'], header=0)
+print(tp)
