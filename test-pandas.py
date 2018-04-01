@@ -25,3 +25,7 @@ print(tp)
 
 # Read an specific column
 print(tp.pop('Post-Test Score'))
+
+# Read Keys = Headers
+for key in tp.keys():
+    print(key)
