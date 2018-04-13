@@ -57,3 +57,6 @@ print(df.index)
 
 print("Data Frame Columns: ")
 print(df.columns)
+
+print("Data Frame Values: ")
+print(df.values)
