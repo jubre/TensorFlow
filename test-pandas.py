@@ -37,3 +37,6 @@ print (df.head(3))
 # Read the first name column
 print(df.first_name)
 print(df['first_name'])
+
+# Read the second column
+print(df['last_name'])
