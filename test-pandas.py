@@ -40,3 +40,7 @@ print(df['first_name'])
 
 # Read the second column
 print(df['last_name'])
+
+# Creando Series
+s = pd.Series([1, 2, 4, 5, 7, 8, 10])
+print(s)
