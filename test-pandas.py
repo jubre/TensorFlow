@@ -31,8 +31,10 @@ for key in tp.keys():
     print(key)
 
 # Read first 3 rows
-print (df.head(3))
+print(df.head(3))
 
+# Read last 3 rows
+print(df.tail(3))
 
 # Read the first name column
 print(df.first_name)
