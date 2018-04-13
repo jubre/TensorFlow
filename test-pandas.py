@@ -54,3 +54,6 @@ print(df)
 
 print("Data Frame Index: ")
 print(df.index)
+
+print("Data Frame Columns: ")
+print(df.columns)
