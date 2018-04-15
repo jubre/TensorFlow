@@ -63,3 +63,6 @@ print(df.values)
 
 print("Data Frame Describe: ")
 print(df.describe())
+
+print("Transporting your data: ")
+print(df.T)
