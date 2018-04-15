@@ -78,3 +78,6 @@ print(df['A'])
 
 print("Selecting via [], which slices the rows: ")
 print(df[0:3])
+
+print("For getting a cross section using a label: ")
+print(df.loc[dates[0]])
