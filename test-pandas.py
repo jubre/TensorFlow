@@ -72,3 +72,6 @@ print(df.sort_index(axis=1, ascending=False))
 
 print("Sorting by values: ")
 print(df.sort_values(by='B'))
+
+print("Selecting a single column, which yields a Series, equivalent to df.A")
+print(df['A'])
