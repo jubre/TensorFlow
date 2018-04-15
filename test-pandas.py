@@ -66,3 +66,6 @@ print(df.describe())
 
 print("Transporting your data: ")
 print(df.T)
+
+print("Sorting by an axis: ")
+print(df.sort_index(axis=1, ascending=False))
