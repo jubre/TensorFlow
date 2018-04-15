@@ -93,3 +93,6 @@ print(df.loc['20130102', ['A', 'B']])
 
 print("For getting a scalar value: ")
 print(df.loc[dates[0], 'A'])
+
+print("For getting fast access to a scalar (equiv to the prior method): ")
+print(df.at[dates[0], 'A'])
