@@ -47,6 +47,10 @@ print(df['last_name'])
 s = pd.Series([1, 2, 4, 5, 7, 8, 10])
 print(s)
 
+###############################################################################
+# Ejemplo de uso de Pandas
+###############################################################################
+
 # Creando un Data DataFrame
 dates = pd.date_range('20130101', periods=6)
 df = pd.DataFrame(np.random.randn(6, 4), index=dates, columns=list('ABCD'))
@@ -96,3 +100,7 @@ print(df.loc[dates[0], 'A'])
 
 print("For getting fast access to a scalar (equiv to the prior method): ")
 print(df.at[dates[0], 'A'])
+
+# Selecting by posicion
+print("Selecting by posicion: ")
+print(df.iloc[3])
