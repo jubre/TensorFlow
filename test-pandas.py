@@ -87,3 +87,6 @@ print(df.loc[:, ['A', 'B']])
 
 print("Showing label slicing, both endpoints are included: ")
 print(df.loc['20130102':'20130104', ['A', 'B']])
+
+print("Reduction in the dimensions of the returned object: ")
+print(df.loc['20130102', ['A', 'B']])
