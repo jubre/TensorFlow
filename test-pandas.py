@@ -90,3 +90,6 @@ print(df.loc['20130102':'20130104', ['A', 'B']])
 
 print("Reduction in the dimensions of the returned object: ")
 print(df.loc['20130102', ['A', 'B']])
+
+print("For getting a scalar value: ")
+print(df.loc[dates[0], 'A'])
