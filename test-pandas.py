@@ -69,3 +69,6 @@ print(df.T)
 
 print("Sorting by an axis: ")
 print(df.sort_index(axis=1, ascending=False))
+
+print("Sorting by values: ")
+print(df.sort_values(by='B'))
