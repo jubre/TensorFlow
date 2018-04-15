@@ -84,3 +84,6 @@ print(df.loc[dates[0]])
 
 print("Selecting on a multi-axis by label: ")
 print(df.loc[:, ['A', 'B']])
+
+print("Showing label slicing, both endpoints are included: ")
+print(df.loc['20130102':'20130104', ['A', 'B']])
