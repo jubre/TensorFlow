@@ -81,3 +81,6 @@ print(df[0:3])
 
 print("For getting a cross section using a label: ")
 print(df.loc[dates[0]])
+
+print("Selecting on a multi-axis by label: ")
+print(df.loc[:, ['A', 'B']])
