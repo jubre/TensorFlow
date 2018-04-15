@@ -60,3 +60,6 @@ print(df.columns)
 
 print("Data Frame Values: ")
 print(df.values)
+
+print("Data Frame Describe: ")
+print(df.describe())
