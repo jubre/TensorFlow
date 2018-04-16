@@ -31,9 +31,76 @@ for key in tp.keys():
     print(key)
 
 # Read first 3 rows
-print (df.head(3))
+print(df.head(3))
 
+# Read last 3 rows
+print(df.tail(3))
 
 # Read the first name column
 print(df.first_name)
 print(df['first_name'])
+
+# Read the second column
+print(df['last_name'])
+
+# Creando Series
+s = pd.Series([1, 2, 4, 5, 7, 8, 10])
+print(s)
+
+###############################################################################
+# Ejemplo de uso de Pandas
+###############################################################################
+
+# Creando un Data DataFrame
+dates = pd.date_range('20130101', periods=6)
+df = pd.DataFrame(np.random.randn(6, 4), index=dates, columns=list('ABCD'))
+print(df)
+
+print("Data Frame Index: ")
+print(df.index)
+
+print("Data Frame Columns: ")
+print(df.columns)
+
+print("Data Frame Values: ")
+print(df.values)
+
+print("Data Frame Describe: ")
+print(df.describe())
+
+print("Transporting your data: ")
+print(df.T)
+
+print("Sorting by an axis: ")
+print(df.sort_index(axis=1, ascending=False))
+
+print("Sorting by values: ")
+print(df.sort_values(by='B'))
+
+print("Selecting a single column, which yields a Series, equivalent to df.A: ")
+print(df['A'])
+
+print("Selecting via [], which slices the rows: ")
+print(df[0:3])
+
+print("For getting a cross section using a label: ")
+print(df.loc[dates[0]])
+
+print("Selecting on a multi-axis by label: ")
+print(df.loc[:, ['A', 'B']])
+
+print("Showing label slicing, both endpoints are included: ")
+print(df.loc['20130102':'20130104', ['A', 'B']])
+
+print("Reduction in the dimensions of the returned object: ")
+print(df.loc['20130102', ['A', 'B']])
+
+print("For getting a scalar value: ")
+print(df.loc[dates[0], 'A'])
+
+print("For getting fast access to a scalar (equiv to the prior method): ")
+print(df.at[dates[0], 'A'])
+
+# Selecting by posicion
+print("Selecting by posicion: ")
+print(df.iloc[3])
