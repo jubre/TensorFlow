@@ -119,3 +119,6 @@ print(df.iloc[:,1:3])
 
 print("For slicing columns explicitly: ")
 print(df.iloc[1,1])
+
+print("For getting fast access to a scalar (equiv to the prior method): ")
+print(df.iat[1,1])
