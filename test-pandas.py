@@ -116,3 +116,6 @@ print(df.iloc[1:3,:])
 
 print("For slicing columns explicitly: ")
 print(df.iloc[:,1:3])
+
+print("For slicing columns explicitly: ")
+print(df.iloc[1,1])
