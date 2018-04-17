@@ -122,3 +122,7 @@ print(df.iloc[1,1])
 
 print("For getting fast access to a scalar (equiv to the prior method): ")
 print(df.iat[1,1])
+
+# Bollean Indexing
+print("For getting fast access to a scalar (equiv to the prior method): ")
+print(df[df.A > 0])
