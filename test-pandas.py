@@ -107,3 +107,6 @@ print(df.iloc[3])
 
 print("By integer slices, acting similar to numpy/python: ")
 print(df.iloc[3:5,0:2])
+
+print("By lists of integer position locations, similar to the numpy/python style: ")
+print(df.iloc[[1,2,4],[0,2]])
