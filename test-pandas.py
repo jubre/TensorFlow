@@ -104,3 +104,6 @@ print(df.at[dates[0], 'A'])
 # Selecting by posicion
 print("Selecting by posicion: ")
 print(df.iloc[3])
+
+print("By integer slices, acting similar to numpy/python: ")
+print(df.iloc[3:5,0:2])
