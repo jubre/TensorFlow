@@ -110,3 +110,6 @@ print(df.iloc[3:5,0:2])
 
 print("By lists of integer position locations, similar to the numpy/python style: ")
 print(df.iloc[[1,2,4],[0,2]])
+
+print("For slicing rows explicitly: ")
+print(df.iloc[1:3,:])
