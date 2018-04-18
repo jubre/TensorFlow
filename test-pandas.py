@@ -124,5 +124,5 @@ print("For getting fast access to a scalar (equiv to the prior method): ")
 print(df.iat[1, 1])
 
 # Bollean Indexing
-print("For getting fast access to a scalar (equiv to the prior method): ")
+print("Using a single column’s values to select data.: ")
 print(df[df.A > 0])
