@@ -106,22 +106,22 @@ print("Selecting by posicion: ")
 print(df.iloc[3])
 
 print("By integer slices, acting similar to numpy/python: ")
-print(df.iloc[3:5,0:2])
+print(df.iloc[3:5, 0:2])
 
 print("By lists of integer position locations, similar to the numpy/python style: ")
-print(df.iloc[[1,2,4],[0,2]])
+print(df.iloc[[1, 2, 4],[0, 2]])
 
 print("For slicing rows explicitly: ")
-print(df.iloc[1:3,:])
+print(df.iloc[1:3, :])
 
 print("For slicing columns explicitly: ")
-print(df.iloc[:,1:3])
+print(df.iloc[:, 1:3])
 
 print("For slicing columns explicitly: ")
-print(df.iloc[1,1])
+print(df.iloc[1, 1])
 
 print("For getting fast access to a scalar (equiv to the prior method): ")
-print(df.iat[1,1])
+print(df.iat[1, 1])
 
 # Bollean Indexing
 print("For getting fast access to a scalar (equiv to the prior method): ")
