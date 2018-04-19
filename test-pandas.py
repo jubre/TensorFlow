@@ -126,3 +126,6 @@ print(df.iat[1,1])
 # Bollean Indexing
 print("For getting fast access to a scalar (equiv to the prior method): ")
 print(df[df.A > 0])
+
+print("Selecting values from a DataFrame where a boolean condition is met: ")
+print(df[df > 0])
