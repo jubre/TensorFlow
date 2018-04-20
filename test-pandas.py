@@ -130,7 +130,8 @@ print(df[df.A > 0])
 print("Selecting values from a DataFrame where a boolean condition is met: ")
 print(df[df > 0])
 
-# Using the isin() method for filtering:
+# Using the isin() method for filtering
 df2 = df.copy()
 df2['E'] = ['one', 'one','two','three','four','three']
 print(df2)
+print(df2[df2['E'].isin(['two','four'])])
