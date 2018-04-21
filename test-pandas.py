@@ -9,7 +9,7 @@ raw_data = {'first_name': ['Jason', 'Molly', 'Tina', 'Jake', 'Amy'],
         'postTestScore': ["25,000", "94,000", 57, 62, 70]}
 
 # Load to df
-df = pd.DataFrame(raw_data, columns = ['first_name', 'last_name', 'age', 'preTestScore', 'postTestScore'])
+df = pd.DataFrame(raw_data, columns=['first_name', 'last_name', 'age', 'preTestScore', 'postTestScore'])
 print(df)
 
 # Save in csv
@@ -109,7 +109,7 @@ print("By integer slices, acting similar to numpy/python: ")
 print(df.iloc[3:5, 0:2])
 
 print("By lists of integer position locations, similar to the numpy/python style: ")
-print(df.iloc[[1, 2, 4],[0, 2]])
+print(df.iloc[[1, 2, 4], [0, 2]])
 
 print("For slicing rows explicitly: ")
 print(df.iloc[1:3, :])
@@ -132,6 +132,23 @@ print(df[df > 0])
 
 # Using the isin() method for filtering
 df2 = df.copy()
-df2['E'] = ['one', 'one','two','three','four','three']
+df2['E'] = ['one', 'one', 'two', 'three', 'four', 'three']
 print(df2)
-print(df2[df2['E'].isin(['two','four'])])
+print(df2[df2['E'].isin(['two', 'four'])])
+
+# Setting a new column automatically aligns the data by the indexes
+
+print("Setting: ")
+s1 = pd.Series([1, 2, 3, 4, 5, 6], index=pd.date_range('20130102', periods=6))
+print(s1)
+df['F'] = s1
+
+# Setting by label
+df.at[dates[0], 'A'] = 0
+
+# Setting by position
+df.iat[0, 1] = 0
+
+# Setting by assingning with a numpy array
+df.loc[:, 'D'] = np.array([5]*len(df))
+print(df)
