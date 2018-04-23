@@ -152,3 +152,8 @@ df.iat[0, 1] = 0
 # Setting by assingning with a numpy array
 df.loc[:, 'D'] = np.array([5]*len(df))
 print(df)
+
+# Operations
+# Operations in general exclude missing data
+
+print(df.mean())
