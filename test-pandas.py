@@ -157,3 +157,5 @@ print(df)
 # Operations in general exclude missing data
 
 print(df.mean())
+
+print(df.mean(1))
