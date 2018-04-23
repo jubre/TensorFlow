@@ -162,3 +162,6 @@ print(df.mean(1))
 
 # Applying functions to the data
 print(df.apply(np.cumsum))
+
+# Applying lambda
+printf(df.apply(lambda x: x.max() - x.min()))
