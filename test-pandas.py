@@ -159,3 +159,6 @@ print(df)
 print(df.mean())
 
 print(df.mean(1))
+
+# Applying functions to the data
+print(df.apply(np.cumsum))
