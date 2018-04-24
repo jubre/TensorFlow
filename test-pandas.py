@@ -172,3 +172,5 @@ print(s)
 
 # values count
 print(s.value_counts())
+
+# String Methods
