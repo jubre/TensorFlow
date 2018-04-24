@@ -184,3 +184,6 @@ print(s.value_counts())
 # Concat
 df = pd.DataFrame(np.random.randn(10, 4))
 print(df)
+# Break it into pieces
+pieces = [df[:3], df[3:7], df[7:]]
+print(pd.concat(pieces))
