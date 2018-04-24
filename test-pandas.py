@@ -174,3 +174,13 @@ print(s)
 print(s.value_counts())
 
 # String Methods
+ s = pd.Series(['A', 'B', 'C', 'Aaba', 'Baca', np.nan, 'CABA', 'dog', 'cat'])
+ print(s.str.lower())
+
+###########
+# MERGE
+###########
+
+# Concat
+df = pd.DataFrame(np.random.randn(10, 4))
+print(df)
