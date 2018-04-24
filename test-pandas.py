@@ -169,3 +169,6 @@ print(df.apply(lambda x: x.max() - x.min()))
 # Histogramming
 s = pd.Series(np.random.randint(0, 7, size=10))
 print(s)
+
+# values count
+print(s.value_counts())
