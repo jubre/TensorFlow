@@ -187,3 +187,5 @@ print(df)
 # Break it into pieces
 pieces = [df[:3], df[3:7], df[7:]]
 print(pd.concat(pieces))
+
+# Join
