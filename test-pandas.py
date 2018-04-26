@@ -189,3 +189,5 @@ pieces = [df[:3], df[3:7], df[7:]]
 print(pd.concat(pieces))
 
 # Join
+left = pd.DataFrame({'key': ['foo', 'foo'], 'lval': [1, 2]})
+right = pd.DataFrame({'key': ['foo', 'foo'], 'rval': [4, 5]})
