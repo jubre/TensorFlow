@@ -194,3 +194,5 @@ right = pd.DataFrame({'key': ['foo', 'foo'], 'rval': [4, 5]})
 
 merged = pd.merge(left, right, on='key')
 print(merged)
+
+# Append rows to a dataframe
